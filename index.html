@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crud Operation Using JavaScript</title>
+
+    <link rel="stylesheet" href="./css/style.css">
+    
+</head>
+
+    
+<body>
+         <!--crud operation main body infromation section--> 
+<div class="hero">
+        <!--[for adding video background]
+   <video autoplay loop muted plays-inline class="back-video">
+        <source src="./video/video1.mp4" type="video/mp4">
+     </video> -->
+    <table align ="center" class="vill">
+                  
+        <tr>
+            <td>                <!--Name section-->
+                <form align ="left" method="" enctype="multipart/form-data" onsubmit="event.preventDefault();onFormSubmit();">
+                
+                    
+                    <div>
+                        <fieldset>
+                            <legend>Full Name*</legend>
+                            <label class="validation-error hide" id="fullnameValidationError">You need to fill up Full Name.</label> <!--invalid massege-->
+                            <input type="text" name="fullname" id="fullname" placeholder="Enter your name">
+                            
+                       </fieldset>
+                    </div>
+                        <!--Employee code section -->
+                    <div>
+                        <fieldset>
+                            <legend>Employee Code</legend>
+                            
+                            <input type="text" name="empcode" id="empcode" placeholder="Enter Employee code">
+                        </fieldset>
+                    </div>
+                                <!-- Salary section-->
+                    <div>
+                        <fieldset>
+                            <legend>Salary</legend>
+                        
+                        <input type="text" name="salary" id="salary" placeholder="Enter salary">
+                        </fieldset>
+                    </div>
+                                <!--City-->
+                    <div>
+                        <fieldset>
+                        <legend>City</legend>
+                        <input type="text" name="city" id="city" placeholder="Enter your city">
+                        </fieldset>
+                    </div>
+                                <!--Email-->
+                    <div align ="left">
+                        <fieldset>
+                        <legend>Email</legend>
+                        <input type="email" name="email" id="email" placeholder="Enter Email">
+                        </fieldset>
+                    </div>
+                                <!--Date of birth-->
+                    <div align ="left">
+                        <fieldset>
+                            <legend>Date of Birth</legend>
+                        <input type="date" name="birthdate" id="birthdate">
+                        </fieldset>
+                    </div>
+                                <!--gender using radio tyle attribute-->
+                    <div align ="left">
+                        <fieldset>
+                        <legend>Gender</legend>
+                        <input type="radio" name="gender" id="gender" value="male">
+                        <label for="male" >Male</label>
+                        <input type="radio" name="gender" id="gender" value="female">
+                        <label for="female">Female</label>
+                        <input type="radio" name="gender" id="gender" value="others">
+                        <label for="others">Others</label>
+                        </fieldset>
+                    </div>
+                    <!--[for drop-down]
+                        <div>
+                        <label for="position">Position</label>
+                        <select name="position" id="position">
+                            <option value="manager" id="position">Manager</option>
+                            <option value="admin" id="position">Admin</option>
+                            <option value="accountend" id="position">Accountend</option>
+                            <option value="executive" id="position" selected>Executive</option>
+                        </select>
+                            
+                    </div>-->
+                    <div>
+                        <fieldset>
+                            <legend>Employee's Photo</legend>
+                        <input type="file" name="userphoto" id="userphoto">
+                        </fieldset>
+                    </div>
+                    <fieldset>
+                    <div class="form-action-buttons">
+                        
+                        <input type="submit" value="submit">
+                    
+                        <button type="reset">Reset</button>
+                        
+                    </div>
+                    </fieldset>
+                   
+                </form>
+            </td>
+            <td>
+                            <!--Information showing table-->
+                <table class="list" id="employeelist">
+                    
+                    <thead>
+                        <tr>
+                            <th>Full Name</th>
+                            <th>Emp Code</th>
+                            <th>Salary</th>
+                            <th>City</th>
+                            <th>Email</th>
+                            <th>Date of birth</th>
+                            <th>Gender</th>
+                           <!--<th>Position</th>--> 
+                            <th>Emp Photo</th>
+                            <th>Function</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
+            </td>
+        </tr>
+        
+    </table>
+    <P class="mb-0 text-center"><marquee><h3> This CRUD Operation build with HTML5, CSS and JavaScript </h3></marquee></P>
+
+    
+</div> 
+    
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
+
